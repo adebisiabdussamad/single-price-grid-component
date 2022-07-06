@@ -1,0 +1,136 @@
+html {
+    --color-primary-700: hsl(179, 62%, 43%);
+    --color-yellow-300: hsl(71, 73%, 54%);
+    --color-grey-100: hsl(204, 43%, 93%);
+    --color-blue-300: hsl(218, 22%, 67%);
+    --color-blue-200: hsl(179, 47%, 52%);
+}
+
+body {
+    background-color: var(--color-grey-100);
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+}
+
+.cont-proper {
+    width: 40rem;
+    margin: 3rem auto;
+    padding: 1rem;
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cont-card:first-of-type {
+    background-color: white;
+    padding: 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    grid-column: 1/span 2;
+}
+
+h1 {
+    color: var(--color-primary-700);
+    font-size: 1.6rem;
+}
+
+.cont-card:first-of-type h2 {
+    font-size: 1.2rem;
+    color: var(--color-yellow-300);
+}
+
+.cont-card:first-of-type p {
+    color: var(--color-blue-300);
+    line-height: 1.5rem;
+}
+
+.cont-card:nth-of-type(2) {
+    padding: 2rem;
+    background-color: var(--color-primary-700);
+    color: var(--color-grey-100);
+    border-bottom-left-radius: 10px;
+
+}
+
+.cont-card:nth-of-type(2) h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.mini-card {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.bold {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.cont-card:nth-of-type(2)>p {
+    margin-top: 0;
+    margin-bottom: 30px
+}
+
+.ups {
+    margin: 20px 0 !important;
+    text-align: center;
+}
+
+.up {
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: var(--color-yellow-300);
+    text-align: center;
+    padding: 15px 90px;
+    color: var(--color-grey-100);
+    border-radius: 5px;
+}
+
+.up:hover {
+    background-color: hsl(71, 63%, 47%);
+}
+
+.cont-card:last-of-type {
+    padding: 2rem;
+    background-color: var(--color-blue-200);
+    color: hsla(180, 32%, 88%, 0.877);
+    border-bottom-right-radius: 10px;
+}
+
+.cont-card:last-of-type h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: var(--color-grey-100);
+}
+
+.attribution {
+    text-align: center;
+    color: var(--color-primary-700);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color-primary-700);
+}
+
+footer a:hover {
+    color: var(--color-yellow-300);
+}
+
+@media (max-width: 655px) {
+    .cont-proper {
+        width: 21rem;
+        display: block;
+    }
+
+    .cont-card:nth-of-type(2) {
+        border-radius: 0;
+    }
+
+    .cont-card:last-of-type {
+        border-bottom-left-radius: 10px;
+    }
+}
